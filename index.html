@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editey - MotionDesigner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="fadeIn" id="mutebutton" onclick="muteUnmute()">
+      <img src="media/images/mutebutton.png" alt="" />
+    </button>
+    <button class="fadeIn" id="videobutton" onclick="playOrPause()">
+      <img src="media/images/playpausebutton.png" alt="" />
+    </button>
+    <header>
+      <section class="bgsection">
+        <video
+          id="background"
+          autoplay
+          loop
+          src="media/video/backgroundvideo.mp4"
+        ></video>
+      </section>
+      <section id="welcomecontent" class="welcome fadeIn">
+        <h1>Bem vindo(a) ao meu site!</h1>
+        <p>
+          Sinta-se à vontade para navegar e conhecer meu trabalho mais a fundo!
+        </p>
+        <button class="buttontogo">VER PROJETOS e SOBRE MIM</button>
+        <a target="_blank" href="https://www.instagram.com/iameditey/"
+          ><button class="socialmedia" id="instagram">.</button></a
+        >
+        <a target="_blank" href="https://contate.me/iameditey">
+          ><button class="socialmedia" id="whatsapp">.</button></a
+        >
+      </section>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>

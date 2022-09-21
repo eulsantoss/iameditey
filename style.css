@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+header{
+    height: auto;
+    overflow: hidden;
+    z-index: -1000;
+}
+
+header section video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    opacity: 40%;
+}
+
+.bgsection {
+    overflow: hidden;
+}
+
+.welcome{
+    color: white;
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    bottom: 55%;
+    text-align: center;
+}
+
+.welcome h1{
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    word-spacing: 12px;
+    margin-bottom: 10px;
+}
+
+.welcome p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-bottom: 150px;
+    letter-spacing: 4px;
+}
+
+.buttontogo{
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+    width: 270px;
+    height: 60px;
+    box-shadow: 0px 0px 15px 4px rgb(0, 0, 0);
+}
+
+.buttontogo:hover{
+    width: 300px;
+    height: 60px;
+    background-color: #fff;
+    border: 3px solid rgb(0, 0, 0);
+    color: #000;
+    box-shadow: 0px 0px 15px 4px white;
+}
+
+.socialmedia{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-position: center;
+    background-size: 100%;
+    transition: .5s;
+}
+
+.socialmedia:hover{
+    width: 60px;
+    height: 60px;
+}
+
+#instagram{
+    background-image: url('media/images/instagram_icon.jpg');
+}
+
+#whatsapp{
+    background-image: url('media/images/whatsapp_icon.jpg');
+}
+
+#videobutton{
+    border: 2.4px solid #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    z-index: 53487583475;
+    right: 15px;
+    transition: .4s;
+}
+
+#videobutton:hover, #mutebutton:hover{
+    scale: 110%;
+}
+
+#videobutton img, #mutebutton img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+#mutebutton{
+    border: 2.4px solid #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    z-index: 53487583475;
+    right: 15px;
+    transition: .4s;
+}
+/*Fade*/
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+.fadeIn {
+    -webkit-animation: fadeIn 10s ease-in-out;
+    -moz-animation: fadeIn 10s ease-in-out;
+    -o-animation: fadeIn 10s ease-in-out;
+    animation: fadeIn 10s ease-in-out;
+    }
+
+/*Pulse*/
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+    }
+    }
+  
+    @keyframes pulse {
+        0% {
+        transform: scale(1);
+        filter: brightness(100%);
+        }
+        100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+        }
+    }
+
+.pulse {
+animation: pulse 0.4s infinite;
+margin: 0 auto;
+display: table;
+margin-top: 50px;
+animation-direction: alternate;
+-webkit-animation-name: pulse;
+animation-name: pulse;
+}
